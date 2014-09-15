@@ -1,0 +1,126 @@
+extends layout
+
+block content
+    h1= title
+    p The World's Outcomes Repository
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 Outcomes Profile
+            p
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Company:
+                |  <span id='userInfoCompany'></span>
+                br
+                strong Blog:
+                |  <span id='userInfoBlog'></span>
+                br
+                strong Location:
+                |  <span id='userInfoLocation'></span>
+                br
+                strong email:
+                |  <span id='userInfoEmail'></span>
+                br
+                strong Hirable:
+                |  <span id='userInfoHirable'></span>
+                br
+                strong Bio:
+                |  <span id='userInfoBio'></span>
+                br
+                strong Public Repo:
+                |  <span id='userInfoPublicRepo'></span>
+                br
+                strong Public Gists:
+                |  <span id='userInfoPublicGists'></span>
+                br
+                strong Followers:
+                |  <span id='userInfoFollowers'></span>
+                br
+                strong Following:
+                |  <span id='userInfoFollowing'></span>
+                br
+                strong Avatar:
+                |  <span id='userInfoAvatar'></span>
+                br
+                strong Gravatar:
+                |  <span id='userInfoGravatar'></span>
+                br
+                strong URL:
+                |  <span id='userInfoURL'></span>
+                br
+                strong HtmlURL:
+                |  <span id='userInfoHtmlURL'></span>
+                br
+                strong Followers URL:
+                |  <span id='userInfoFollowersURL'></span>
+                br
+                strong Following URL:
+                |  <span id='userInfoFollowingURL'></span>
+                br
+                strong Gists URL:
+                |  <span id='userInfoGistsURL'></span>
+                br
+                strong Starred URL:
+                |  <span id='userInfoStarredURL'></span>
+                br
+                strong Subscript URL:
+                |  <span id='userInfoSubscriptionsURL'></span>
+                br
+                strong Org URL:
+                |  <span id='userInfoOrganizationsURL'></span>
+                br
+                strong Repo URL:
+                |  <span id='userInfoReposURL'></span>
+                br
+                strong Events URL:
+                |  <span id='userInfoEventsURL'></span>
+                br
+                strong Received Events:
+                |  <span id='userInfoReceivedEvents'></span>
+                br
+                strong Login:
+                |  <span id='userInfoLogin'></span>
+                br
+                strong ID:
+                |  <span id='userInfoID'></span>
+                br
+                strong Type:
+                |  <span id='userInfoType'></span>
+                br
+                strong Site Admin:
+                |  <span id='userInfoSiteAdmin'></span>
+                br
+                strong Created:
+                |  <span id='userInfoCreated'></span>
+                br
+                strong Updated:
+                |  <span id='userInfoUpdated'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 Outcomes Catalogue
+        #userList
+            table
+                thead
+                    th UserName
+                    th Email
+                    th Delete?
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Poll the World's Repositories
+        #addUser
+            fieldset
+                input#inputUserName(type='text', placeholder='Username')
+                input#inputUserEmail(type='text', placeholder='Email') 
+                br
+                button#btnAddUser Poll Now
+        // /ADD USER
+
+    // /WRAPPER
