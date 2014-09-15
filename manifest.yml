@@ -1,0 +1,25 @@
+# This file is used by `cf push` to determine the settings your application
+
+applications:
+
+# the name of the app that is used in `CF` commands
+
+- name:    liquidxio
+ 
+# the indented values are settings for the app
+
+  # this is the host name of your app; the app will be available at the url:
+  #   http://<host>.mybluemix.net
+
+  host:    liquidxio
+
+  # amount of RAM that is allocated
+
+  memory:  512M
+
+  # command to run when deployed through 'CF push'
+
+  command: node app.js
+  
+  
+ 
